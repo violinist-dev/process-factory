@@ -12,6 +12,11 @@
       "Violinist\\ProcessFactory\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Violinist\\ProcessFactory\\Tests\\": "tests"
+    }
+  },
   "require": {
     "symfony/process": "^2.7 || ^3.0 || ^4.0"
   },
