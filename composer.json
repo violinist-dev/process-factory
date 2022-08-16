@@ -1,5 +1,6 @@
 {
   "name": "violinist-dev/process-factory",
+  "description": "A factory for symfony/process processes",
   "license": "MIT",
   "authors": [
     {
