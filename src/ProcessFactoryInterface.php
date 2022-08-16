@@ -11,5 +11,5 @@ interface ProcessFactoryInterface
      *
      * @return \Symfony\Component\Process\Process
      */
-    public function getProcess($commandline, $cwd = null, array $env = null, $input = null, $timeout = 60, array $options = null);
+    public function getProcess(array $commandline, $cwd = null, array $env = null, $input = null, $timeout = 60, array $options = null);
 }
