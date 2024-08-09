@@ -46,15 +46,10 @@ jobs:
       - name: Install dependencies
         run: composer --verbose install
 
-      - name: Install patches and phpstan if we have to
-        if: matrix.php-versions != 7.1
-        run: composer require --dev phpstan/phpstan
-
       - name: Run tests
         run: composer test
         env:
           COMPOSER_VERSION: ${{ matrix.composer }}
 
       - name: run phpstan
-        if: matrix.php-versions != 7.1
         run: ./vendor/bin/phpstan analyze src tests
