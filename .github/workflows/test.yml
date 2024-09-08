@@ -53,7 +53,7 @@ jobs:
       - name: Install dependencies with correct symfony process version
         run:  |
           composer require symfony/process:^${{ matrix.process-version }}.0
-          git checkout composer*
+          git checkout .
           composer install
 
       - name: Run tests
