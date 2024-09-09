@@ -60,7 +60,7 @@ jobs:
           composer require symfony/process:^${{ matrix.process-version }}.0
           git checkout .
           rm composer.lock
-          composer update --lock
+          composer update not-installed/here
 
       - name: Run tests
         run: composer test
