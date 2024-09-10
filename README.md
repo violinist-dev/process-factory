@@ -1,5 +1,5 @@
 # process-factory
-[![Build Status](https://travis-ci.org/violinist-dev/process-factory.svg?branch=master)](https://travis-ci.org/violinist-dev/process-factory)
+[![Test](https://github.com/violinist-dev/process-factory/actions/workflows/test.yml/badge.svg)](https://github.com/violinist-dev/process-factory/actions/workflows/test.yml)
 
 An interface for creating process factories.
 
