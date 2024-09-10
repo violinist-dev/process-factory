@@ -10,7 +10,13 @@ class ProcessFactoryTest extends TestCase
     {
         $factory = new DummyFactory();
         $process = $factory->getProcess(['nonexisting_command']);
-        $process->run();
+        try {
+            $process->run();
+        } catch (\Exception $e) {
+            // Introduced in symfony/process 7.
+            $this->assertStringContainsString('No such file or directory', $e->getMessage());
+            return;
+        }
         $this->assertEquals(127, $process->getExitCode());
     }
 }
