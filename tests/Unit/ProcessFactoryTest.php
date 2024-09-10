@@ -15,6 +15,7 @@ class ProcessFactoryTest extends TestCase
         } catch (\Exception $e) {
             // Introduced in symfony/process 7.
             $this->assertStringContainsString('No such file or directory', $e->getMessage());
+            return;
         }
         $this->assertEquals(127, $process->getExitCode());
     }
