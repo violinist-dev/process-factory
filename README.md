@@ -1,5 +1,7 @@
 # process-factory
 [![Test](https://github.com/violinist-dev/process-factory/actions/workflows/test.yml/badge.svg)](https://github.com/violinist-dev/process-factory/actions/workflows/test.yml)
+[![Packagist](https://img.shields.io/packagist/v/violinist-dev/process-factory.svg?maxAge=3600)](https://packagist.org/packages/violinist-dev/process-factory)
+[![Packagist](https://img.shields.io/packagist/dt/violinist-dev/process-factory.svg?maxAge=3600)](https://packagist.org/packages/violinist-dev/process-factory)
 
 An interface for creating process factories.
 
